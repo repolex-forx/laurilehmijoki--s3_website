@@ -1,1 +1,124 @@
-Initializing
+# Repolex Knowledge Graph of laurilehmijoki/s3_website
+
+RDF knowledge graph data for [laurilehmijoki/s3_website](https://github.com/laurilehmijoki/s3_website), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download laurilehmijoki/s3_website
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 292a9e335731c3782513618c84151fb5f4b9d70b
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 292a9e335731c3782513618c84151fb5f4b9d70b
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 04d70f0db65c40d4c74b1f949ed135dad227723e.nq.gz
+│   ├── 05cf838705f1ecc1c997dccf63b30bd26d7b04a1.nq.gz
+│   ├── 07b06fccc743c43f8615cc9cc5616ac20b4436b2.nq.gz
+│   ├── 0be2f290291ea366b8ef8b0593a9f359deb97a62.nq.gz
+│   ├── 0e878133725e98061ef96860e87c4da073f05d57.nq.gz
+│   ├── 121dae796ef0031b435bbb517805ce585c4d9d61.nq.gz
+│   ├── 14cfe0b572ae489511efb3cc17d792876ec904c9.nq.gz
+│   ├── 17a54bd106e8643dda8449b109d614b72853d276.nq.gz
+│   ├── 1f2fffd448b54693546d848cae6f07be7d6caf19.nq.gz
+│   ├── 20ea632cc330399ace5acdf38a691dce0a7e57dc.nq.gz
+│   ├── 221818e69957ecc831b4ebd3bdf64180c7ea3812.nq.gz
+│   ├── 28bf8b4321ed9009a1fd4d40e5ff947022221b96.nq.gz
+│   ├── 34092ea330c677df4736a222f16acf5a3ad786b7.nq.gz
+│   ├── 377e0867e73de2a9d507b8135e3632de66923543.nq.gz
+│   ├── 408f70ed84abd0fde0fd9639c64e1f3540965a5a.nq.gz
+│   ├── 4560485a6ed22e789e5a6ddcbb3d529ec57711ec.nq.gz
+│   ├── 4a291cec2390ee05bfd0ecdfe351ac2c918db727.nq.gz
+│   ├── 54c32528e9ed11477b1ca47fd74ce9b7313f9d9a.nq.gz
+│   ├── 584565f2900aa79d0a4713ccbe59a3a67601fe77.nq.gz
+│   ├── 727d7dde45d337b23e54e7c17ee1ff813b6bb35e.nq.gz
+│   ├── 77c899a665b85cc220daf4eeae576a066d76cb18.nq.gz
+│   ├── 780434c1ab580610a9328760e59c694d85551435.nq.gz
+│   ├── 82b320f8b6b981440a87412d4f40a5c658a8f03b.nq.gz
+│   ├── 8431d9c07e3ce71ba214faca41cb24568bd8f384.nq.gz
+│   ├── 85aefee086c5953baabaacbf14837e6d36b681a8.nq.gz
+│   ├── 88d501634670fa760ea64eea867e8a460ad5398c.nq.gz
+│   ├── 8ae50f7d7a127f2575fbdb9e0a569c7410b253cb.nq.gz
+│   ├── 9ab8bda42d6abe87bbd233393476e47aa5de2f05.nq.gz
+│   ├── a3dc05fd3fd7636aee86f78bc8ab6beef22e5608.nq.gz
+│   ├── a963367e3a1f4d8f26c866c8fa21226f668e898c.nq.gz
+│   ├── ad02b09e26a286e3748f0aa0a39d18244336bd14.nq.gz
+│   ├── adf4d2b9532f828d4f13044f609a3d9a0c27b06e.nq.gz
+│   ├── aef0a9bcb032418d0d5089724fe7e0b3f10e6d99.nq.gz
+│   ├── bcb7e0cb9fd5e6a2afa453c457a4c34df23d7780.nq.gz
+│   ├── c53e8efb7229c41c1df1e6e198559718cb99bc81.nq.gz
+│   ├── c80ee3697054566d1a4247d80be78ec3ddfde295.nq.gz
+│   ├── cad41b6bbaf1301fb7ab7de0a2e72a5652eacead.nq.gz
+│   ├── cc26714f61d836a9c2f0d74a6e39834b52a73f95.nq.gz
+│   ├── d0fc42a7792aab285e56a6f7de386fb894692b5d.nq.gz
+│   ├── d2284a181aae44d31966425f079c77d91d2e7d7b.nq.gz
+│   ├── d7a8cdfb2740266f96bb745c37426441ca086e6a.nq.gz
+│   ├── d897a8ca218381f9333387bd3ee56ac3b3edbcc1.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e813b22432bf4be2ff70e98c1ffb5ffc28820dc0.nq.gz
+│   └── fc20590fa1989f039fbda593beb48a4154c52b37.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 292a9e335731c3782513618c84151fb5f4b9d70b.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 53 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[laurilehmijoki/s3_website](https://github.com/laurilehmijoki/s3_website)
+
+---
+*Parsed on 2026-11-09 by [repolex](https://repolex.ai)*
