@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/laurilehmijoki/s3_website/commit/292a9e335731c3782513618c84151fb5f4b9d70b",
       "git:hexsha": "292a9e335731c3782513618c84151fb5f4b9d70b",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     },
     {
       "@id": "https://repolex.ai/r/laurilehmijoki/s3_website/commit/4097971ea0cbaee1cd1a46444c2124bfffff3a46",
